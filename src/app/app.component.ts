@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-biding-app';
+  hidden : boolean = true;
+  count : number = 0;
+
+  onClick(){
+    this.count++;
+  }
+
+  onDoubleClick(){
+    if(this.hidden === false){
+      this.hidden = true;
+    }
+    else{
+      this.hidden = false;
+    }
+  }
+  
 }
